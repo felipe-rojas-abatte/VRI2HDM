@@ -1,0 +1,35 @@
+% Standard Model + Vector Resonant Inert 2 Higgs Doublet Model - unitary gauge.
+option chepPDWidth=200.
+
+%keys gauge_fixing=unitary.
+keys CKMdim=1.
+use SM_VRI2HDM_tex.
+
+%do_if gauge_fixing==Feynman.
+%    model 'SM+VRI2HDM(tFG)'/1.
+%do_else_if gauge_fixing==unitary.
+    model 'SM+VRI2HDM(UG)'/2.
+%do_else.
+%    write('Error: the key "gauge" should be either "Feynman" or "unitary".').
+%    quit.
+%end_if.
+
+option ReduceGamma5=0.
+let g5=gamma5.
+
+read a_vr2ihdm_var.     % parameters of the model
+read b_vr2ihdm_prt.     % set of particles
+read c_vr2ihdm_let.     % multiplets
+read d_vr2ihdm_gfi.     % gauge fields interaction
+read e_vr2ihdm_gsmi.    % higgs sector
+read f_vr2ihdm_gmi.     % gauge-fermionic matter interaction
+read g_vr2ihdm_yuk.     % yukawa interactions	
+%read h_vr2ihdm_fpg.    % Faddeev-Popov ghosts
+read i_vr2ihdm_new.     % new sector
+read j_vr2ihdm_loop.    % loop vertex HGG and HAA.
+
+	
+SetAngle(1-SW**2=CW**2).
+SetEM(A,EE).
+CheckHerm.
+
