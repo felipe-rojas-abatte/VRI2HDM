@@ -1,0 +1,48 @@
+#include <string>
+#include <fstream>
+#include <iostream>
+#include <TMath.h>
+#include <TGraph.h>
+#include <TGraphErrors.h>
+#include <TLegend.h>
+#include <TStyle.h>
+#include <TCanvas.h>
+#include <TH1.h>
+#include <TH2.h>
+#include <TLatex.h>
+#include <TLine.h>
+void plot_1(void)
+{
+ TCanvas *Can = new TCanvas("c","Plot",200,10,600,400);
+ double xMin=0.000000E+00, xMax=1.500000E+03, yMin=7.037531E-20, yMax=8.259686E-08;
+ char buff[2000];
+ double  X[100];
+ for(int i=0;i<100;i++) X[i]=xMin+(i+0.5)*(xMax-xMin)/100;
+ double Xtext = xMin+0.3*(xMax-xMin);
+ double Ytext= yMax;
+ double dYtext= (yMax-yMin)/20.;
+ TH1F *hr = Can->DrawFrame(xMin,yMin,xMax,yMax);
+ hr->SetXTitle("T(Z)");
+ double  Y1[100];
+ double  dY1[100];
+  FILE*f=fopen("plot_1.txt","r");
+  for(int i=0;i<100;)
+ {
+  fscanf(f,"%[^\n]%*c",buff);
+  if(buff[0]!='#')
+  {
+  sscanf(buff," %lf %lf"  ,Y1+i ,dY1+i); i++;
+    }
+ }
+   fclose(f);
+   double dX[100];
+   for(int i=0;i<100;i++) dX[i]=(xMax-xMin)/100/3.;
+   TGraphErrors *gr1 =new TGraphErrors(100,X,Y1,dX,dY1);
+   gr1->SetLineColor(1);
+   gr1->Draw("P");
+  Ytext-=dYtext;
+  TText *t1 = new TText(Xtext,Ytext,"Diff. cross section [pb/GeV]");
+  t1->SetTextColor(1);
+  t1->Draw();
+//  Can->Print("plot_1.pdf");
+}
