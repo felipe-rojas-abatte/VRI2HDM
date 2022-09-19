@@ -1,0 +1,3724 @@
+#LyX file created by tex2lyx 2.3
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin /home/alfonso/Dropbox/VRI2HDM/New_model/Draft/
+\textclass revtex4-1
+\begin_preamble
+\usepackage{amsfonts}
+
+
+\newcommand{\sigv}{\langle \sigma v \rangle}
+\newcommand{\ld[1]}{\lambda_{#1}}
+\newcommand{\lds}{\lambda_{345}}
+\newcommand{\RD}{\Omega_{\text{DM}}h^2}
+\newcommand{\Mh[1]}{M_{h_{#1}}}
+\newcommand{\Mhc}{M_{h^{\pm}}}
+\newcommand{\Mrho}{M_{\rho}}
+\newcommand{\Mrhom}{M_{\rho}^{\text{MAX}}}
+
+
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding iso8859-1
+\fontencoding default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks 0
+\pdf_bookmarksnumbered 0
+\pdf_bookmarksopen 0
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks 0
+\pdf_pdfborder 0
+\pdf_colorlinks 0
+\pdf_backref section
+\pdf_pdfusetitle 0
+\papersize default
+\use_geometry false
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+An i2HDM Strongly Coupled to a non-Abelian Vector Resonance
+\end_layout
+
+\begin_layout Author
+Felipe Rojas-Abatte
+\end_layout
+
+\begin_layout Author Email
+astrofis.rojas@gmail.com
+\end_layout
+
+\begin_layout Author
+Maria Luisa Mora
+\end_layout
+
+\begin_layout Author Email
+maria.luisa.mora.u@gmail.com
+\end_layout
+
+\begin_layout Author
+Jose Urbina
+\end_layout
+
+\begin_layout Author Email
+jose.urbina.avalos@gmail.com
+\end_layout
+
+\begin_layout Author
+Alfonso R. Zerwekh
+\end_layout
+
+\begin_layout Author Email
+alfonso.zerwekh@usm.cl
+\end_layout
+
+\begin_layout Affiliation
+Departamento de Fí­sica Universidad Técnica Federico Santa Marí­a 
+\begin_inset Newline newline
+\end_inset
+
+ and Centro Cientí­fico-Tecnológico de Valparaíso
+\end_layout
+
+\begin_layout Abstract
+We study the possibility of a Dark Matter candidate having its origin in an extended Higgs sector which, at least partially, is related to a new strongly interacting sector. More concretely, we consider an i2HDM (
+\emph on
+i.e.
+\emph default
+ a Type-I Two Higgs Doublet Model supplemented with a 
+\begin_inset Formula $Z_{2}$
+\end_inset
+
+ under which the non-standard scalar doublet is odd) based on the gauge group 
+\begin_inset Formula $SU(2)_{1}\times SU(2)_{2}\times U(1)_Y$
+\end_inset
+
+. We assume that one of the scalar doublets and the standard fermion transform non-trivially under 
+\begin_inset Formula $SU(2)_{1}$
+\end_inset
+
+ while the second doublet transforms under 
+\begin_inset Formula $SU(2)_{2}$
+\end_inset
+
+. Our main hypothesis is that standard sector is weakly coupled while the gauge interactions associated to the second group is characterized by a large coupling constant. We explore the consequences of this construction for the phenomenology of the Dark Matter candidate and we show that the presence of the new vector resonance reduces the relic density saturation region, compared to the usual i2DHM, in the high Dark Matter mass range. In the collider side, we argue that the mono-
+\begin_inset Formula $Z$
+\end_inset
+
+ production is the channel which offers the best chances to manifest the presence of the new vector field. We study the departures from the usual i2HDM predictions and show that the discovery of the heavy vector at the LHC is challenging even in the mono-
+\begin_inset Formula $Z$
+\end_inset
+
+ channel since the typical cross sections are of the order of 
+\begin_inset Formula $10^{-2}$
+\end_inset
+
+ fb. 
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+The discovery of the Higgs boson 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "Aad:2012tfa,Chatrchyan:2012xdj"
+literal "true"
+
+\end_inset
+
+ crowned Standard Model (SM) with great success. However, the High Energy Physics community is unanimous to suspect that the SM is not a complete description of the non-gravitational interactions. Three main open questions justify this general conviction: a natural origin for the electroweak scale, the origin of neutrino masses and the origin of Dark Matter (DM). The first of these problems has motivated the construction of many extensions of the SM. Some of them are based on the elegant idea that the electroweak scale may be dynamically produced in the context of a new strong interaction. Of course, this proposal inevitably leads to the prediction a new composite sector. On the other hand, although many observations point out to the existence of DM, we have few clues about its nature. A very popular possibility is that DM consists of neutral massive particles (with masses ranging from some GeV's to some TeV's) with annihilation cross section of the same order of magnitude than the cross sections obtained from the weak interaction (the so called WIMP). One of the best known models that incorporate this kind of DM candidate is a type-I 2HDM where one of the doublets is odd under a new (and usually 
+\emph on
+ad-hoc
+\emph default
+) 
+\begin_inset Formula $Z_{2}$
+\end_inset
+
+ symmetry. This model is usually referred as the Inert Two Higgs Doublet Model or i2HDM 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "Deshpande:1977rw, LopezHonorez:2006gr, Barbieri:2006dq"
+literal "true"
+
+\end_inset
+
+. It is tempting to merge the ideas of an extended Higgs sector and compositeness, at least partially. Indeed already some authors have explored the phenomenology of the 2HDM in the context of traditional dynamical electroweak symmetry breaking 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "Luty:1990bg"
+literal "true"
+
+\end_inset
+
+ and the so called Composite Higgs Models where the scalar doublets arise as pseudo-Nambu-Goldstone bosons 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "Mrazek:2011iu, Bertuzzo:2012ya, DeCurtis:2016tsm, DeCurtis:2016gly, DiChiara:2016ybc, DeCurtis:2016scv"
+literal "true"
+
+\end_inset
+
+. Additionally, for some particular models, it has been studied the phenomenological consequences of a two Higgs doublet sector coupled to composite vector resonances 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "DiChiara:2016ybc, Zerwekh:2009yu"
+literal "true"
+
+\end_inset
+
+. In this paper, we focus on a i2HDM where one of the scalar doublets ( the one which is odd under the 
+\begin_inset Formula $Z_{2}$
+\end_inset
+
+ symmetry) is supposed to belong to a new strongly interacting sector and is directly coupled to a vector resonance. This is in consonance with the very appealing idea of having a complex hidden sector with its own interactions and structure levels. We explore mainly the consequences of the new heavy vector on the phenomenology of the DM candidate. Additionally we argue that the best chance to observe a signature of the new vector resonance at the LHC comes from the single production of a gauge boson plus missing transverse energy. To achieve our goals, we have organized our paper in the following way: in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Model"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ we describe our theoretical construction emphasizing the introduction of the new heavy vector. In section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Constrains"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ we comment on the 
+\emph on
+a priori
+\emph default
+ experimental and theoretical constrains whcih are relevant for our model. In section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "DMresults"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, we describe our results for the phenomenology of the DM candidate while in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "MonoZ"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ we focus on the mono-Z production at the LHC. Finally in section
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Conclusions"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ we state our conclusions.
+\end_layout
+
+\begin_layout Section
+The Model
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "Model"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Following the idea of Hidden Local Symmetry (HLS) 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "PhysRevLett.54.1215"
+literal "true"
+
+\end_inset
+
+, we introduce the new vector resonance as the effective gauge fields of a (hidden) gauge group which we call 
+\begin_inset Formula $SU(2)_{2}$
+\end_inset
+
+. Consequently, our model is based on the local group 
+\begin_inset Formula $SU(2)_{1}\times SU(2)_{2}\times U(1)_{Y}$
+\end_inset
+
+. We assume the the first group is associated to the elementary or weak interacting sector while the second group describes a composite or strongly interacting sector. A fundamental hypothesis under our construction is that standard left-handed fermions and one of the scalar doublets (
+\begin_inset Formula $\phi_{1}$
+\end_inset
+
+) transform under 
+\begin_inset Formula $SU(2)_{1}$
+\end_inset
+
+ (and 
+\begin_inset Formula $U(1)_{Y}$
+\end_inset
+
+) while the second scalar doublet (
+\begin_inset Formula $\phi_{2}$
+\end_inset
+
+) transforms under 
+\begin_inset Formula $SU(2)_{2}$
+\end_inset
+
+ (and the hypercharge group) as illustrated in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Moose"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+. Additionally, we introduce a bi-doublet field which transforms as 
+\begin_inset Formula $U_{1}\Sigma U_{2}^{\dagger}$
+\end_inset
+
+ with 
+\begin_inset Formula $U_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $U_{2}$
+\end_inset
+
+ elements of 
+\begin_inset Formula $SU(2)_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $SU(2)_{2}$
+\end_inset
+
+ respectively. With this ingredients, and assuming that 
+\begin_inset Formula $\phi_{2}$
+\end_inset
+
+ is odd under a new 
+\begin_inset Formula $Z_{2}$
+\end_inset
+
+ symmetry, the most general Lagrangian (with operators up to dimension 4) for the gauge and scalar sector is:
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float figure
+placement ht
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+\align center
+
+\begin_inset Graphics 
+	filename moose.png
+	scale 30
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Moose diagram representing the non-Abelian part of the group structure underlying our model. The 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ link field is a bi-doublet while the scalars 
+\begin_inset Formula $\phi_1$
+\end_inset
+
+ and 
+\begin_inset Formula $\phi_2$
+\end_inset
+
+ are doublets of 
+\begin_inset Formula $SU(2)_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $SU(2)_{2}$
+\end_inset
+
+ respectively. 
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "Moose"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Formula \begin{eqnarray}
+\mathcal{L} & = & -\frac{1}{2}Tr\left[F_{1\mu\nu}F_{1}^{\mu\nu}\right]-\frac{1}{2}Tr\left[F_{2\mu\nu}F_{2}^{\mu\nu}\right]+\frac{u^{2}}{2}Tr\left[\left(D_{\mu}\Sigma\right)^{\dagger}\left(D^{\mu}\Sigma\right)\right]\nonumber \\
+ & + & \left(D_{\mu}\phi_{1}\right)^{\dagger}\left(D^{\mu}\phi_{1}\right)+\left(D_{\mu}\phi_{2}\right)^{\dagger}\left(D^{\mu}\phi_{2}\right)+m_{1}^{2}\left(\phi_{1}^{\dagger}\phi_{1}\right)+m_{2}^{2}\left(\phi_{2}^{\dagger}\phi_{2}\right)\nonumber \\
+ & - & \lambda_{1}\left(\phi_{1}^{\dagger}\phi_{1}\right)^{2}-\lambda_{2}\left(\phi_{2}^{\dagger}\phi_{2}\right)^{2}-\lambda_{3}\left(\phi_{1}^{\dagger}\phi_{1}\right)\left(\phi_{2}^{\dagger}\phi_{2}\right)\nonumber \\
+ & - & \lambda_{4}\left(\phi_{1}^{\dagger}\Sigma\phi_{2}\right)\left(\phi_{2}^{\dagger}\Sigma^{\dagger}\phi_{1}\right)-\frac{\lambda_{5}}{2}\left[\left(\phi_{1}^{\dagger}\Sigma\phi_{2}\right)^{2}+\left(\phi_{2}^{\dagger}\Sigma^{\dagger}\phi_{1}\right)^{2}\right]\label{eq:Lag1}
+\end{eqnarray}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Formula \[
+D_{\mu}\Sigma=\partial_{\mu}\Sigma-ig_{1}A_{1\mu}\Sigma+ig_{2}\Sigma A_{2\mu}
+\]
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Formula \[
+D_{\mu}\phi_{j}=\partial_{\mu}\phi_{j}-ig_{j}A_{j\mu}\phi_{j}
+\]
+\end_inset
+
+and 
+\begin_inset Formula $u$
+\end_inset
+
+ is an energy scale which characterize the new strong sector.
+\end_layout
+
+\begin_layout Standard
+\noindent
+The 
+\begin_inset Formula $SU(2)_{1}\times SU(2)_{2}$
+\end_inset
+
+ is spontaneously broken down to the diagonal subgroup, which we identify with 
+\begin_inset Formula $SU(2)_{L}$
+\end_inset
+
+, when the 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ field acquires a v.e.v 
+\begin_inset Formula $\left\langle \Sigma\right\rangle =1$
+\end_inset
+
+. In this phase, Lagrangian (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Lag1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) becomes:
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Formula \begin{eqnarray}
+\mathcal{L} & = & -\frac{1}{2}Tr\left[F_{1\mu\nu}F_{1}^{\mu\nu}\right]-\frac{1}{2}Tr\left[F_{2\mu\nu}F_{2}^{\mu\nu}\right]+\frac{u^{2}}{2}Tr\left[\left(g_{1}A_{1\mu}-g_{2}A_{2\mu}\right)\left(g_{1}A_{1}^{\mu}-g_{2}A_{2}^{\mu}\right)\right]\nonumber \\
+ & + & \left(D_{\mu}\phi_{1}\right)^{\dagger}\left(D^{\mu}\phi_{1}\right)+\left(D_{\mu}\phi_{2}\right)^{\dagger}\left(D^{\mu}\phi_{2}\right)+m_{1}^{2}\left(\phi_{1}^{\dagger}\phi_{1}\right)+m_{2}^{2}\left(\phi_{2}^{\dagger}\phi_{2}\right)\nonumber \\
+ & - & \lambda_{1}\left(\phi_{1}^{\dagger}\phi_{1}\right)^{2}-\lambda_{2}\left(\phi_{2}^{\dagger}\phi_{2}\right)^{2}-\lambda_{3}\left(\phi_{1}^{\dagger}\phi_{1}\right)\left(\phi_{2}^{\dagger}\phi_{2}\right)\nonumber \\
+ & - & \lambda_{4}\left(\phi_{1}^{\dagger}\phi\right)\left(\phi_{2}^{\dagger}\phi_{1}\right)-\frac{\lambda_{5}}{2}\left[\left(\phi_{1}^{\dagger}\phi_{2}\right)^{2}+\left(\phi_{2}^{\dagger}\phi_{1}\right)^{2}\right]\label{eq:Lag2}
+\end{eqnarray}
+\end_inset
+
+and a mass mixing term appears in the gauge sector. On the other hand, the electroweak symmetry breaking occurs, as in the SM, when 
+\begin_inset Formula $\phi_{1}$
+\end_inset
+
+ gets a v.e.v: 
+\begin_inset Formula $\left\langle \phi_{1}\right\rangle =(0,v/\sqrt{2})^{T}$
+\end_inset
+
+. Notice that the 
+\begin_inset Formula $Z_{2}$
+\end_inset
+
+ symmetry prevents 
+\begin_inset Formula $\text{\ensuremath{\phi}}_{2}$
+\end_inset
+
+ from acquiring a v.e.v. This fact assures that 
+\begin_inset Formula $\phi_1$
+\end_inset
+
+ is the SM Higgs doublet and forbid the appearance of any mass mixing term in the scalar sector. Finally, notice that, because of the same 
+\begin_inset Formula $Z_2$
+\end_inset
+
+ symmetry, Yukawa terms can only be constructed with 
+\begin_inset Formula $\phi_1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\noindent
+After these symmetry breaking processes, the following non-diagonal mass matrices are generated for the neutral and charged vector bosons:
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Formula \[
+M_{N}^{2}=\frac{v^{2}}{4}\left[\begin{array}{ccc}
+(1+a^{2})g_{1}^{2} & -a^{2}g_{1}g_{2} & -g_{1}g_{y}\\
+-a^{2}g_{1}g_{2} & a^{2}g_{2}^{2} & 0\\
+-g_{1}g_{y} & 0 & g_{Y}^{2}
+\end{array}\right]
+\]
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Formula \[
+M_{C}^{2}=\frac{v^{2}}{4}\left[\begin{array}{cc}
+(1+a^{2})g_{1}^{2} & -a^{2}gg_{2}\\
+-a^{2}g_{1}g_{2} & a^{2}g_{2}^{2}
+\end{array}\right]
+\]
+\end_inset
+
+where 
+\begin_inset Formula $a=u/v$
+\end_inset
+
+ and 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $g_{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $g_{Y}$
+\end_inset
+
+ are the coupling constants associated to 
+\begin_inset Formula $SU(2)_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $SU(2)_{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $U(1)_{Y}$
+\end_inset
+
+. When 
+\begin_inset Formula $M_{N}^{2}$
+\end_inset
+
+ is diagonalized in the limit where 
+\begin_inset Formula $g_{2}\gg g_{1}$
+\end_inset
+
+, we obtain the following mass eigenstates for the neutral sector:
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\begin_inset Formula \begin{eqnarray*}
+A_{\mu} & = & \frac{g_{Y}}{\sqrt{g_{1}^{2}+g_{Y}^{2}}}A_{1\mu}^{3}+\frac{g_{1}g_{Y}}{g_{2}\sqrt{g_{1}^{2}+g_{Y}^{2}}}A_{2\mu}^{3}+\frac{g_{1}}{\sqrt{g_{1}^{2}+g_{Y}^{2}}}B_{\mu}\\
+Z_{\mu} & = & -\frac{g_{1}}{\sqrt{g_{1}^{2}+g_{Y}^{2}}}A_{1\mu}^{3}-\frac{g_{1}^{2}}{g_{2}\sqrt{g_{1}^{2}+g_{Y}^{2}}}A_{2\mu}^{3}+\frac{g_{Y}}{\sqrt{g_{1}^{2}+g_{Y}^{2}}}B_{\mu}\\
+\rho_{\mu}^{0} & = & -\frac{g_{1}}{g_{2}}A_{1\mu}^{3}+A_{2\mu}^{3}.
+\end{eqnarray*}
+\end_inset
+
+where 
+\begin_inset Formula $\rho$
+\end_inset
+
+ denotes the new heavy vector resonance.
+\end_layout
+
+\begin_layout Standard
+\noindent
+Similarly, the eigenstates of the charged sector (in the same limit) are:
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Formula \begin{eqnarray*}
+W_{\mu}^{\pm} & = & A_{1\mu}^{\pm}+\frac{g_{1}}{g_{2}}A_{2\mu}^{\pm}\\
+\rho_{\mu}^{\pm} & = & -\frac{g_{1}}{g_{2}}A_{1\mu}^{\pm}+A_{2\mu}^{\pm}
+\end{eqnarray*}
+\end_inset
+
+where, as usual, 
+\begin_inset Formula $A_{n\mu}^{\pm}=\frac{1}{\sqrt{2}}\left(A_{n\mu}^{1}\mp A_{n\mu}^{2}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\noindent
+In the same limit, the masses of the vector states can me expressed as:
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Formula \begin{eqnarray}
+M_A&=&0 \qquad \mathrm{(exact)}\\
+M_Z&\approx& \frac{v\sqrt{g_{1}^{2}+g_{y}^{2}}}{2}\left[1-\frac{1}{2}\frac{g_{1}^{4}}{g_{2}^{2}(g_{1}^{2}+g_{y}^{2})}\right]\\
+M_{\rho^0}&\approx& \frac{a v g_2}{2}\left[1+\frac{g_1^2}{2g_2^2} \right]\\
+M_{W}&\approx&\frac{v g_1}{2}\left[1-\frac{g_1^2}{2g_2^2} \right]\\
+M_{\rho{\pm}}&\approx& \frac{a v g_2}{2}\left[1+\frac{g_1^2}{2g_2^2} \right]
+\end{eqnarray}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Notice that to first order in 
+\begin_inset Formula $g_1/g_2$
+\end_inset
+
+, we can write:
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Formula \[
+\frac{g_1}{g_2}\approx a\frac{M_W}{M_{\rho}}
+\]
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The quantity 
+\begin_inset Formula $g_1/g_2$
+\end_inset
+
+ is supposed to be small. This is the precise meaning of the assumption that the non-standard sector is strongly interacting. As we will explain below, in this work we consider values of 
+\begin_inset Formula $M_{\rho}$
+\end_inset
+
+ in the 2-4 TeV range and 
+\begin_inset Formula $a=3,4,5$
+\end_inset
+
+, obtaining 
+\begin_inset Formula $g_1/g_2 < 0.2 $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+In the scalar sector, the spectrum is straightforward since, as we already emphasized, no mass mixing term arise due to the 
+\begin_inset Formula $Z_2$
+\end_inset
+
+ symmetry. Consequently, near the minimum of the potential, the scalar doublets can be parametrized as:
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Formula \begin{equation}
+	\phi_{1}=\frac{1}{\sqrt{2}}\left(\begin{array}{c}
+	0\\
+	v+H
+	\end{array}\right)\qquad\phi_{2}=\frac{1}{\sqrt{2}}\left(\begin{array}{c}
+	\sqrt{2}h^{+}\\
+	h_{1}+ih_{2}
+	\end{array}\right)
+\end{equation}
+\end_inset
+
+where 
+\begin_inset Formula $H$
+\end_inset
+
+ is the SM-like Higgs boson and is identified with the observed 125 GeV scalar state. Notice that the 
+\begin_inset Formula $Z_2$
+\end_inset
+
+ symmetry makes the lightest component of 
+\begin_inset Formula $\phi_2$
+\end_inset
+
+ stable. As it is usually done, we assume that 
+\begin_inset Formula $h_1$
+\end_inset
+
+ is the stable state and, consequently, the DM candidate.
+\end_layout
+
+\begin_layout Standard
+Our model has seven free parameters: 
+\begin_inset Formula $u$
+\end_inset
+
+, 
+\begin_inset Formula $g_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $m_{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $\lambda_{i}$
+\end_inset
+
+ with 
+\begin_inset Formula $i=2...5$
+\end_inset
+
+ (
+\begin_inset Formula $\lambda_1$
+\end_inset
+
+ is fixed by the mass of the 125 GeV scalar observed at the LHC), however not all of them are equally significant for our research. It is convenient, for phenomenological proposes to work with the following parameters: 
+\begin_inset Formula \begin{equation}
+\Mh[1], \quad \Mh[2], \quad \Mhc, \quad \Mrho, \quad \lds, \quad \ld[2], \quad a  \label{model-parameters}
+\end{equation}
+\end_inset
+
+where 
+\begin_inset Formula $\Mh[1], \Mh[2], \Mhc$
+\end_inset
+
+ are the physical masses of the new scalars, 
+\begin_inset Formula $\Mrho$
+\end_inset
+
+ is the mass of the vector resonance and 
+\begin_inset Formula $\lds=\ld[3]+\ld[4]+\ld[5]$
+\end_inset
+
+. Notice that 
+\begin_inset Formula $\lds$
+\end_inset
+
+ plays a crucial roll controlling the interaction between the dark matter and the SM Higgs. According to this, we can rewrite the coupling constants as a function of the free parameters 
+\begin_inset Formula \begin{eqnarray}
+\nonumber &\displaystyle \ld[3] = \lds + 2\frac{\Mhc^2 - \Mh[1]^2}{v^2} \qquad \ld[4] = \frac{\Mh[1]^2 + \Mh[2]^2 - 2\Mhc^2}{v^2} \qquad \ld[5] = -\frac{\Mh[2]^2-\Mh[1]^2}{v^2}& \label{lambda_parameter} \\
+& \displaystyle m_2^2 = \lds\frac{v^2}{2} - \Mh[1]^2  \qquad g_2 = \frac{2\Mrho}{va}& \label{eq:cond}
+\end{eqnarray}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Experimental and Theoretical Constrains
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "Constrains"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The model parameter space can be constrained from theoretical restrictions coming from the analysis of the potential and experimental searches as well. In this section we mention all the restriction that we are account. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Vacuum stability:
+\series default
+ In order to perform calculations around a minimum point without loose stability of the potential we need that there is no direction in field space along which the potential tends to minus infinity. This leads to the well-known conditions 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "Branco:2011iw"
+literal "true"
+
+\end_inset
+
+ 
+\begin_inset Formula \begin{equation}
+\ld[1] >0, \qquad \ld[2] >0, \qquad  2\sqrt{\ld[1]\ld[2]} + \ld[3] > 0, \qquad 2\sqrt{\ld[1]\ld[2]} + \ld[3] + \ld[4] + \ld[5] > 0  \label{rest:below_lim}
+\end{equation}
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Neutral vacuum:
+\series default
+ Another important requirement is that the vacuum must be electrically neutral. This can be guarantied if 
+\begin_inset Formula \begin{equation}
+\ld[5] < 0 \qquad \text{and} \qquad \ld[4]+\ld[5] < 0  \label{neutral-vacuum}
+\end{equation}
+\end_inset
+
+The last condition (Eq.(
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "neutral-vacuum"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+)) assures us that 
+\begin_inset Formula $\Mh[1]$
+\end_inset
+
+ is the lightest particle which is odd under the 
+\begin_inset Formula $Z_2$
+\end_inset
+
+ symmetry. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Inert vacuum:
+\series default
+ We need to consider the case where only the standard model field 
+\begin_inset Formula $\phi_1$
+\end_inset
+
+ get a vacuum expectation value in order to avoid a mixing term between dark matter and the Higgs boson which will be catastrophic for abundance of relic density. According to reference 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "Ginzburg:2010wa"
+literal "true"
+
+\end_inset
+
+ the vacuum stability condition is satisfied provided that: 
+\begin_inset Formula \begin{equation}
+m_1^2 > 0 \qquad \text{and} \qquad m_2^2 < \sqrt{\frac{\ld[2]}{\ld[1]}}m_1^2
+\end{equation}
+\end_inset
+
+In terms of our set of independent parameters, these conditions translate into:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\begin_inset Formula \begin{equation}
+ \Mh[1]^2>\frac{v^2}{2}\left(\lds-2\sqrt{\ld[1]\ld[2]}\right)
+ \end{equation}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This is a very important constraint because it places an upper bound on 
+\begin_inset Formula $\lds$
+\end_inset
+
+ for a given DM mass 
+\begin_inset Formula $\Mh[1]$
+\end_inset
+
+. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Perturbatibity:
+\series default
+ All the quartic couplings of the potential must be limited by perturbatibity constraint, therefore 
+\begin_inset Formula \begin{equation}
+|\ld[i]| \leq 8\pi
+\end{equation}
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Unitarity:
+\series default
+ According to reference
+\begin_inset space ~
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "Arhrib:2012ia"
+literal "true"
+
+\end_inset
+
+ we can impose tree-level unitarity constraints if the eigenvectors of the scattering matrix elements between scalars and gauge bosons satisfy 
+\begin_inset Formula \begin{equation}
+|e_i|\leq 8\pi  \label{unitarity}
+\end{equation}
+\end_inset
+
+where the parameters 
+\begin_inset Formula $e_i$
+\end_inset
+
+ are defined as 
+\begin_inset Formula \begin{eqnarray}
+&& e_{1,2}= \ld[3] \pm \ld[4] \quad, \quad e_{3,4} = \ld[3] \pm \ld[5] \\
+&& e_{5,6}= \ld[3] + 2\ld[4] \pm 3\ld[5] \quad, \quad e_{7,8} = -\ld[1]-\ld[2] \pm \sqrt{(\ld[1]-\ld[2])^2+\ld[4]^2} \\
+&& e_{9,10} = -3\ld[1] - 3\ld[2] \pm \sqrt{9(\ld[1] -\ld[2])^2 + (2\ld[3]+\ld[4])^2}  \label{e9-10} \\
+&& e_{11,12} = -\ld[1] - \ld[2] \pm \sqrt{(\ld[1] - \ld[2])^2 + \ld[5]^2}
+\end{eqnarray}
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Electroweak precision Test:
+\series default
+ In the i2HDM the electroweak radiative corrections are affected by the relation between the scalar masses
+\begin_inset space ~
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "Barbieri:2006dq"
+literal "true"
+
+\end_inset
+
+ alongside the Higgs mass and Z boson mass. The expressions for the S and T values are: 
+\begin_inset Formula \begin{equation}
+S = 
+\frac{1}{72\pi}\frac{1}{(x_2^2-x_1^2)^3}
+\left[ 
+x_2^6 f_a(x_2) -x_1^6 f_a(x_1)
++ 9 x_2^2 x_1^2( x_2^2 f_b(x_2) - x_1^2 f_b(x_1)
+\right]
+\end{equation}
+\end_inset
+
+where 
+\begin_inset Formula $x_1=\frac{\Mh[1]}{\Mhc}, x_2=\frac{\Mh[2]}{\Mhc}, f_a(x) = -5+12\log(x), f_b(x)=3-4\log(x)$
+\end_inset
+
+ and 
+\begin_inset Formula \begin{equation}
+T = \frac{1}{32\pi^2\alpha v^2}\left[F(\Mhc^2,\Mh[2]^2) + F(\Mhc^2,\Mh[1]^2) - F(\Mh[2]^2,\Mh[1]^2)\right]
+\end{equation}
+\end_inset
+
+where the function 
+\begin_inset Formula $F(x,y)$
+\end_inset
+
+ is defined by 
+\begin_inset Formula \begin{equation*}
+F(x,y) = 
+\begin{cases}
+\frac{x+y}{2}-\frac{xy}{x-y}\log{\left(\frac{x}{y}\right)}, & x\neq y\\
+0, & x = y
+\end{cases}
+\end{equation*}
+\end_inset
+
+Written in this form, according to Ref
+\begin_inset space ~
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "Belyaev:2016lok"
+literal "true"
+
+\end_inset
+
+, the contribution to 
+\begin_inset Formula $S$
+\end_inset
+
+ and 
+\begin_inset Formula $T$
+\end_inset
+
+ shows explicitly that we cannot distinguish the CP properties of 
+\begin_inset Formula $h_1$
+\end_inset
+
+ and 
+\begin_inset Formula $h_2$
+\end_inset
+
+. With 
+\begin_inset Formula $U$
+\end_inset
+
+ fixed to be zero, the central value of 
+\begin_inset Formula $S$
+\end_inset
+
+ and 
+\begin_inset Formula $T$
+\end_inset
+
+, assuming a SM Higgs boson mass of 
+\begin_inset Formula $m_h$
+\end_inset
+
+ = 125 GeV, are given by
+\begin_inset space ~
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "Baak:2014ora"
+literal "true"
+
+\end_inset
+
+ 
+\begin_inset Formula \begin{equation}
+S = 0.06 \pm 0.09 ,\qquad T = 0.1 \pm 0.07  \label{EWPT}
+\end{equation}
+\end_inset
+
+with the correlation coefficient +0.91. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+LHC constrains on vector resonances:
+\series default
+ In general, vector resonances may produce detectable signals at colliders through channels like dijet production, dilepton production, the associate production of a Higgs boson and a gauge boson, and the production of two gauge bosons. Also the Higgs decay rate into two photons (which is loop process) and the oblique parameter 
+\begin_inset Formula $S$
+\end_inset
+
+, 
+\begin_inset Formula $T$
+\end_inset
+
+ may receive sensible corrections from heavy charged fields. However, in our case the new vector resonance couples to the SM fields only through mixing terms which are suppressed by factors 
+\begin_inset Formula $g_1/g_2$
+\end_inset
+
+. Moreover, previous studies suggest that the experimental constrains are largely satisfied if the new resonance is heavier than 2.4 TeV 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "Castillo-Felisola:2013jua, Carcamo-Hernandez:2013ypa, Gintner:2017cfg"
+literal "true"
+
+\end_inset
+
+. 
+\begin_inset Float figure
+placement ht
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+\align center
+
+\begin_inset Graphics 
+	filename Pictures/Upper_Limits.pdf
+	scale 22
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\begin_inset Formula $\sigma(pp \rightarrow \rho_{\mu} \rightarrow j j)$
+\end_inset
+
+ computed in the kinamatic region where the 
+\begin_inset Formula $\rho_{\mu}$
+\end_inset
+
+ decay channels into a pair of non-standard scalars are open (lower solid line) or closed (higher solid line). 
+\begin_inset Formula $a=3$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:dijet"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+As a matter of example, we compare the cross section predicted by our model for the process 
+\begin_inset Formula $pp \rightarrow \rho_{\mu} \rightarrow j j$
+\end_inset
+
+ with the upper limits set by ATLAS for dijet resonances 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "ATLAS:2016lvi"
+literal "true"
+
+\end_inset
+
+, as shown in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:dijet"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+. Our calculations are performed in two different kinematic regimes depending on whether the 
+\begin_inset Formula $\rho_{\mu}$
+\end_inset
+
+ decay channels into a pair of non-standard scalars are open or not. When these channels are open they dominate over the decay into SM particles since the interaction in the former case is proportional to 
+\begin_inset Formula $g_2$
+\end_inset
+
+ while in the latter case is suppressed by a factor 
+\begin_inset Formula $g_1/g_2$
+\end_inset
+
+. This makes the resonant dijet production quit unprovable as shown by the lowest continuous line in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:dijet"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+. The upper continuous line, on the other hand, shows the predicted cross section when the vector resonance is not able to decay into non-standard scalars. Notice that in the appropriate kinematic regime, values of 
+\begin_inset Formula $\Mrho < 2.4$
+\end_inset
+
+ TeV are allowed.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%%%% 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+LHC limits from Higgs di-photon decay:
+\series default
+ The decay rate of the Higgs bosons into two photons does not constrain very much the mass of the vector resonance either because the Higgs boson couples to 
+\begin_inset Formula $\rho_{\mu}$
+\end_inset
+
+ only as a result of the mixing between 
+\begin_inset Formula $A_{1\mu}$
+\end_inset
+
+ and 
+\begin_inset Formula $A_{2\mu}$
+\end_inset
+
+ and, consequently, the 
+\begin_inset Formula $H\rho_{\mu}^{+}\rho_{\nu}^{-}$
+\end_inset
+
+ vertex is suppressed by a factor 
+\begin_inset Formula $(g_1/g_2)^2$
+\end_inset
+
+. However, the interaction vertex 
+\begin_inset Formula $Hh_{\mu}^{+}h_{\nu}^{-}$
+\end_inset
+
+ is governed by the 
+\begin_inset Formula $\ld[3]$
+\end_inset
+
+ quartic coupling which can be constrained through loop calculations. We can use the limit coming from ATLAS-CMS Higgs data analysis
+\begin_inset space ~
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "ATLAS-and-CMS"
+literal "true"
+
+\end_inset
+
+ to set a restriction on 
+\begin_inset Formula $\ld[3]$
+\end_inset
+
+ using the experimental value: 
+\begin_inset Formula \begin{equation}
+\frac{Br^{BSM}(H\rightarrow\gamma\gamma)}{Br^{SM}(H\rightarrow\gamma\gamma)} = \mu^{\gamma\gamma} = 1.16^{+40}_{-36}  \label{higgs-aa}
+\end{equation}
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Invisible Higgs-decay:
+\series default
+ Interactions among Higgs boson and the new sector (inert scalars and vector resonance) are allowed in this model, therefore the possibility of new invisible decay channels are open. Those channels could lead to deviations of Higgs boson decay width from the SM value. Using results that comes from ATLAS
+\begin_inset space ~
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "Aad:2015txa"
+literal "true"
+
+\end_inset
+
+ at 95% CL we can restrict the invisible Higgs decay to be less than 
+\begin_inset Formula \begin{equation}
+Br(H\rightarrow \text{invisible}) < 28\% \label{Br-inv}
+\end{equation}
+\end_inset
+
+which is also compatible with the CMS result
+\begin_inset space ~
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "CMS-PAS-HIG-15-012"
+literal "true"
+
+\end_inset
+
+. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+LEP limits on inert scalars:
+\series default
+ In order to not affect the precise measurements of W and Z widths we need to impose restrictions to the mass of the inert scalars demanding that 
+\begin_inset Formula $\Gamma(W^{\pm}\rightarrow h_1h^{\pm})$
+\end_inset
+
+, 
+\begin_inset Formula $\Gamma(W^{\pm}\rightarrow h_2h^{\pm})$
+\end_inset
+
+, 
+\begin_inset Formula $\Gamma(Z\rightarrow h_1h_2)$
+\end_inset
+
+ and 
+\begin_inset Formula $\Gamma(Z\rightarrow h^+h^-)$
+\end_inset
+
+ channels are kinematically closed. This leads to the following constraints: 
+\begin_inset Formula \begin{eqnarray}
+\nonumber &\Mh[1] + \Mhc > M_{W^{\pm}} \qquad \Mh[2] + \Mhc > M_{W^{\pm}}& \\
+&\Mh[1] + \Mh[2] > M_{Z} \qquad 2\Mhc > M_{Z}&  \label{LEP}
+\end{eqnarray}
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Relic Density limits:
+\series default
+ We analyze the abundance of dark matter using 
+\family typewriter
+micrOMEGAs
+\family default
+
+\begin_inset space ~
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "Belanger:2013oya, Belanger:2006is, Belanger:2010gh"
+literal "true"
+
+\end_inset
+
+ package. This program solves the Boltzmann equation numerically, using 
+\family typewriter
+CalcHEP
+\family default
+
+\begin_inset space ~
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "Belyaev:2012qa"
+literal "true"
+
+\end_inset
+
+ to calculate all of the relevant cross sections. The program consider the case when 
+\begin_inset Formula $M_{h_1}<M_W,M_Z$
+\end_inset
+
+ taking into account the annihilation into 3-body final state from 
+\begin_inset Formula $VV^*$
+\end_inset
+
+ or 4-body final state from 
+\begin_inset Formula $V^*V^*$
+\end_inset
+
+ (
+\begin_inset Formula $V=W^{\pm},Z$
+\end_inset
+
+). Co-annihilation effects are taken into account as well. We require that our predictions for the relic density be in agreement with the PLANCK 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "Ade:2013zuv, Planck:2015xua"
+literal "true"
+
+\end_inset
+
+ measurement: 
+\begin_inset Formula \begin{equation}
+\Omega_{\text{DM}}^{\text{Planck}}h^2 = 0.1184 \pm 0.0012  \label{PLANCK-lim}
+\end{equation}
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Direct Detection limits:
+\series default
+ Using the first dark matter results coming from XENON1T
+\begin_inset space ~
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "Aprile:2017iyp"
+literal "true"
+
+\end_inset
+
+ with 34.2 live days of data acquired between November 2016 and January 2017 we have evaluated the spin-independent cross section of DM scattering off the proton, 
+\begin_inset Formula $\sigma_{SI}$
+\end_inset
+
+, also using 
+\family typewriter
+micrOMEGAs
+\family default
+. 
+\end_layout
+
+\begin_layout Section
+Dark Matter Phenomenology
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "DMresults"
+
+\end_inset
+
+ As we explained above, our model has a 7-dimensional parameter space, however we can have a good phenomenological overview of the model focusing only on 3 specific parameters (
+\begin_inset Formula $\lds$
+\end_inset
+
+, 
+\begin_inset Formula $\Mh[1]$
+\end_inset
+
+, 
+\begin_inset Formula $\Mrho$
+\end_inset
+
+) and fixing all the other ones to which the phenomenological observables have poor sensibility. For instance, the dark matter candidates and the SM fields only interact through the Higgs boson, the electroweak gauge bosons and the new heavy vector; but, since the interaction with the standard gauge bosons is governed by the electroweak gauge couplings which are fixed, the only relevant free parameter is 
+\begin_inset Formula $\lds$
+\end_inset
+
+, the dark matter mass itself (
+\begin_inset Formula $\Mh[1]$
+\end_inset
+
+) and 
+\begin_inset Formula $\Mrho$
+\end_inset
+
+. 
+\begin_inset Float figure
+placement htb
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics 
+	filename  Omega_Mh1_deg.pdf
+	width 48text%
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics 
+	filename  Omega_Mh1_nodeg.pdf
+	width 48text%
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+ -0.5cm
+\begin_inset space \hspace*{}
+\length -3cm
+\end_inset
+
+(a)
+\begin_inset space \hspace*{}
+\length 48text%
+\end_inset
+
+(b) 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Relic density 
+\begin_inset Formula $\RD$
+\end_inset
+
+, as a function of 
+\begin_inset Formula $\Mh[1]$
+\end_inset
+
+ for different values of 
+\begin_inset Formula $\lds$
+\end_inset
+
+ in a quasi-degenerate scenario (a) where 
+\begin_inset Formula $\Mh[2]=\Mhc = \Mh[1] + 1$
+\end_inset
+
+ and a no-degenerate scenario (b) where 
+\begin_inset Formula $\Mh[2]=\Mhc = \Mh[1] + 100$
+\end_inset
+
+. In both cases we fix the values of 
+\begin_inset Formula $\Mrho = 3000$
+\end_inset
+
+ GeV, 
+\begin_inset Formula $a=2$
+\end_inset
+
+ and 
+\begin_inset Formula $\ld[2]=1$
+\end_inset
+
+. The horizontal red line corresponds to the relic density measurements PLANCK limits.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:RD-mh1-lds"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In Figure
+\begin_inset space ~
+
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:RD-mh1-lds"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ we show a 2-dimensional section of the parameter space where we have the dark matter relic density as a function of 
+\begin_inset Formula $\Mh[1]$
+\end_inset
+
+ for several values of 
+\begin_inset Formula $\lds$
+\end_inset
+
+. For simplicity, in this analysis we always take 
+\begin_inset Formula $\Mh[2]=\Mhc$
+\end_inset
+
+. With this assumption an important kinematic parameter is 
+\begin_inset Formula $\Delta M\equiv \Mh[2]-\Mh[1]$
+\end_inset
+
+. Now, two qualitatively different scenarios can be distinguished: a quasi-degenerate case where 
+\begin_inset Formula $\Delta M = 1$
+\end_inset
+
+ GeV and a non-degenerate case 
+\begin_inset Formula $\Delta M=100$
+\end_inset
+
+ GeV. In both we considerer 
+\begin_inset Formula $\Mrho = 3000$
+\end_inset
+
+ GeV, 
+\begin_inset Formula $a=2$
+\end_inset
+
+ and 
+\begin_inset Formula $\ld[2]=1$
+\end_inset
+
+. We can notice that for 
+\begin_inset Formula $10$
+\end_inset
+
+ GeV 
+\begin_inset Formula $\leq \Mh[1] \ll \Mrho/2$
+\end_inset
+
+ GeV (which we will refer as the low mass region) the model reproduces the same pattern of relic density predicted by the usual the i2HDM, as expected. It is only when 
+\begin_inset Formula $\Mh[1]$
+\end_inset
+
+ approaches to 
+\begin_inset Formula $\Mrho/2$
+\end_inset
+
+ that the effect of the vector resonance 
+\begin_inset Formula $\rho$
+\end_inset
+
+ becomes important.
+\end_layout
+
+\begin_layout Standard
+In the reference 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "Belyaev:2016lok"
+literal "true"
+
+\end_inset
+
+ there is a detailed phenomenological explanation of what happens in the low mass region, so we will just briefly comment on it. Here, we can distinguish two different asymptotic behaviors: the first one for 
+\begin_inset Formula $10$
+\end_inset
+
+ GeV 
+\begin_inset Formula $< \Mh[1] < 50$
+\end_inset
+
+ GeV and the second one (
+\begin_inset Formula $\Mh[1] > 200$
+\end_inset
+
+) GeV.
+\end_layout
+
+\begin_layout Standard
+In Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:RD-mh1-lds"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+a), which shows the quasi-degenerate case, we can see that below 62.5 GeV (
+\shape italic
+i.e
+\shape default
+ half of the Higgs boson mass) the co-annihilation effects between the inert scalars become important because of the appearance of new annihilation channels, pushing the DM Relic density under the experimental PLANCK limit. On the other hand, in the non-degenerate case (when 
+\begin_inset Formula $\Delta M = 100$
+\end_inset
+
+ GeV), as seen in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:RD-mh1-lds"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+b), co-annihilation is suppressed generating an enhancement of the 
+\begin_inset Formula $\RD$
+\end_inset
+
+ becoming even 3 orders of magnitude above the PLANCK limit for small values of 
+\begin_inset Formula $\lds$
+\end_inset
+
+ (
+\begin_inset Formula $\sim 0.01$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Now, in the second case (
+\shape italic
+i.e
+\shape default
+ for 
+\begin_inset Formula $\Mh[1] > 200$
+\end_inset
+
+ GeV), when 
+\begin_inset Formula $\Delta M = 1$
+\end_inset
+
+ GeV the quartic coupling becomes small enough to produce a significant suppression of the Dark Matter annihilation into longitudinal polarized gauge bosons. This effect increases the relic density which is capable of reaching the PLANCK limit even considering the effects of co-annihilation. On the other hand, for the non-degenerate case, as seen in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:RD-mh1-lds"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+b), the value 
+\begin_inset Formula $\Delta M$
+\end_inset
+
+ is large and the average annihilation cross sections of the processes 
+\begin_inset Formula $h_1h_1\rightarrow W_LW_L$
+\end_inset
+
+ and 
+\begin_inset Formula $h_1h_1\rightarrow Z_LZ_L$
+\end_inset
+
+ are increased, making the abundance of relic density too low to reach the saturation limit. This generates the flat asymptotic behavior for large values of 
+\begin_inset Formula $\Mh[1]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+When 
+\begin_inset Formula $\RD$
+\end_inset
+
+ reaches the PLANCK limit in the high mass region, but now considering the 
+\begin_inset Formula $\Delta M=1$
+\end_inset
+
+ GeV case, the annihilation average cross section through the vector resonance starts to be important as the value of 
+\begin_inset Formula $\Mh[1]$
+\end_inset
+
+ increases. At 
+\begin_inset Formula $\Mh[1] = \Mrho/2$
+\end_inset
+
+ GeV the value of the relic density distribution decreases dramatically due to co-annihilation of 
+\begin_inset Formula $h_1$
+\end_inset
+
+ and 
+\begin_inset Formula $h_2$
+\end_inset
+
+ into an on-shell 
+\begin_inset Formula $\rho$
+\end_inset
+
+ vector. The wide deep around 3000 GeV (see Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:RD-mh1-lds"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+a)) corresponds to the opening of annihilation channels 
+\begin_inset Formula $h^+ h^-\rightarrow \rho \rightarrow \rho^+ \rho^-$
+\end_inset
+
+, 
+\begin_inset Formula $h_1 h_1 \rightarrow \rho^+ \rho^-$
+\end_inset
+
+ and 
+\begin_inset Formula $h_2 h_2 \rightarrow \rho^+ \rho^-$
+\end_inset
+
+. In the case where 
+\begin_inset Formula $\Delta M=100$
+\end_inset
+
+ GeV, the main annihilation processes are 
+\begin_inset Formula $h_1h_1\rightarrow W^+W^-$
+\end_inset
+
+ and 
+\begin_inset Formula $h_1h_1\rightarrow ZZ$
+\end_inset
+
+, although there is a small contribution (
+\begin_inset Formula $\sim 4\%$
+\end_inset
+
+) of the process 
+\begin_inset Formula $h_1h^+ \rightarrow \rho^+ H$
+\end_inset
+
+ via s-channel 
+\begin_inset Formula $\rho$
+\end_inset
+
+ boson interchange which generate the small negative peak at 
+\begin_inset Formula $\Mh[1]=\Mrho/2$
+\end_inset
+
+. Finally, in this case, the last deep at 
+\begin_inset Formula $\Mh[1]=3000$
+\end_inset
+
+ GeV is produced through the opening of the annihilation channels 
+\begin_inset Formula $h_1h_1 \rightarrow \rho^+ \rho^-$
+\end_inset
+
+ and 
+\begin_inset Formula $h_1h_1 \rightarrow \rho^0 \rho^0$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%It is important to mention that even in those cases where $
+\backslash
+lds$ is large, above $
+\backslash
+Mh[1]>
+\backslash
+Mrho/2$ the interaction between the inert scalars and the SM Higgs become practically invisible alongside the interaction with $
+\backslash
+rho$ boson as we can observe in both cases of Fig(
+\backslash
+ref{fig:RD-mh1-lds}).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In order to have a complete visualization of how the vector resonance affects the i2HDM, we performed a random scan over the 7-dimensional parameter space considering all the experimental and theoretical constraints mentioned in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Constrains"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+. In our analysis, we exclude all the points in the parameter space where over-abundance take place because they are considered non-physical. However, we keep the regions of points which produce under-abundance since it only means that an additional source of DM is needed. Consequently, we used a re-scaled Direct Detection cross section 
+\begin_inset Formula $\hat{\sigma}_{\text{SI}} = \left(\Omega_{\text{DM}}/\Omega_{\text{PLANCK}}\right) \times \sigma_{\text{SI}}$
+\end_inset
+
+ which allows us to take into account the case when 
+\begin_inset Formula $h_1$
+\end_inset
+
+ contribute only partially to the total amount of DM. The range of the scan for each free parameter is summarized en Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab_param"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float table
+placement ht
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Range of the parameter space
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\begin_inset Tabular 
+<lyxtabular version="3" rows="8" columns="3">
+<features rotate="0" tabularvalignment="middle" tabularwidth="0pt">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\series bold
+Parameter
+\series default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\series bold
+min value
+\series default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\series bold
+max value
+\series default
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula $\Mh[1]$
+\end_inset
+
+ [GeV] 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+480 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+4500 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\Mh[2]$
+\end_inset
+
+ [GeV] 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+480 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+4500 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\Mhc$
+\end_inset
+
+ [GeV]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+480 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+4500 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\Mrho$
+\end_inset
+
+ [GeV]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+2500 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+4500 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\lds$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+-5 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+5 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\ld[2]$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+0 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+5 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $a$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+3 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+5 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "tab_param"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As it was previously explained, our model reproduces the same pattern of 
+\begin_inset Formula $\RD$
+\end_inset
+
+ as the i2HDM for 
+\begin_inset Formula $\Mh[1]\ll\Mrho/2$
+\end_inset
+
+ because the interaction between the SM particles and the vector resonance 
+\begin_inset Formula $(\rho_{\mu})$
+\end_inset
+
+ is suppressed by the factor 
+\begin_inset Formula $(g_1/g_2)$
+\end_inset
+
+. Therefore we will focus on the high mass region where the interaction with the vector resonance is more sensitive.
+\end_layout
+
+\begin_layout Standard
+In Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:high-mass-param"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, we show projections in 2-dimensional planes of the scan as a color map of DM relic density where we show the planes (
+\begin_inset Formula $\Mh[1],\lds$
+\end_inset
+
+) and (
+\begin_inset Formula $\Mh[1],\Mrho$
+\end_inset
+
+). In Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:high-mass-param"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+a), we can see the effect of the vacuum stability constraint on 
+\begin_inset Formula $\lds$
+\end_inset
+
+, making it to satisfiy the bound 
+\begin_inset Formula $\lds \gtrsim -1.47$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+It is easy to recognize the DM annihilation into an on-shell vector resonance 
+\begin_inset Formula $(h_1 h_2 \rightarrow \rho)$
+\end_inset
+
+ at 
+\begin_inset Formula $\Mh[1]\approx \Mrho/2$
+\end_inset
+
+ GeV through the substantial DM relic density decrease in a narrow sector represented by the diagonal blue pattern in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:high-mass-param"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+b).
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float figure
+placement htb
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics 
+	filename  Mh1_ld345_Omega_cut12345678.pdf
+	width 50text%
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics 
+	filename  Mh1_MR_Omega_cut12345678.pdf
+	width 50text%
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+ -0.5cm
+\begin_inset space \hspace*{}
+\length -3cm
+\end_inset
+
+(a)
+\begin_inset space \hspace*{}
+\length 48text%
+\end_inset
+
+(b) 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+2D projections of the 7D random scan of the model parameter space restricted to (450 GeV, 4500 GeV) for 
+\begin_inset Formula $\Mh[1]$
+\end_inset
+
+, (2500 GeV, 4500 GeV) for 
+\begin_inset Formula $\Mrho$
+\end_inset
+
+ and (-2,5) for 
+\begin_inset Formula $\lds$
+\end_inset
+
+ considering all constraints except under-abundance of DM. 
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:high-mass-param"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float figure
+placement htb
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics 
+	filename  Mh1_ld345_Omega_cut123456710.pdf
+	width 50text%
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics 
+	filename  Mh1_MR_Omega_cut123456710.pdf
+	width 50text%
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+vskip
+\end_layout
+
+\end_inset
+
+ -0.5cm
+\begin_inset space \hspace*{}
+\length -3cm
+\end_inset
+
+(a)
+\begin_inset space \hspace*{}
+\length 48text%
+\end_inset
+
+(b) 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+2D projections of the 7D random scan of the model parameter space restricted to (450 GeV, 4500 GeV) for 
+\begin_inset Formula $\Mh[1]$
+\end_inset
+
+, (2500 GeV, 4500 GeV) for 
+\begin_inset Formula $\Mrho$
+\end_inset
+
+ and (-2,5) for 
+\begin_inset Formula $\lds$
+\end_inset
+
+ considering all constraints plus the lower PLANCK limit.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:saturation"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+It is important to stress that 
+\begin_inset Formula $\Mrho/2$
+\end_inset
+
+ establishes a border in the parameter space for the saturation of relic density. For 
+\begin_inset Formula $\Mh[1] > \Mrho$
+\end_inset
+
+ , the annihilation cross section becomes more intense and the abundance of relic density decreases below the experimental PLANCK limit. This border is clearly seen in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:saturation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+b) where we present the parameter space which at the same time reproduces the value of 
+\begin_inset Formula $\RD$
+\end_inset
+
+ observed by PLANCK and is consistent with all the experimental constrains. In other words, the interactions due to the new vector resonance reduce the saturation region in the high mass zone compared to i2HDM because when the DM reaches the limit 
+\begin_inset Formula $\Mh[1] \approx \Mrho$
+\end_inset
+
+ the channels 
+\begin_inset Formula $h_1 h_2 \rightarrow \rho^+\rho^-$
+\end_inset
+
+ and 
+\begin_inset Formula $h_1 h_2 \rightarrow \rho^0\rho^0$
+\end_inset
+
+ become open causing the abundance of DM to fall down by at least one order of magnitude, as we can clearly see from Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:high-mass-param"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+b).
+\end_layout
+
+\begin_layout Standard
+As we stressed before, in the high mass zone it is possible to reach the saturation limit of the relic density due to the high level of degeneracy of the three inert scalars, which turns out to be no more than a few GeV. This mass split is closely related to the quartic coupling of the potential. A small difference of mass implies small values of the 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ parameters which translates into a low average annihilation cross section of the dark matter into longitudinal polarized gauge bosons, generating an enhancement in the abundance of relic density. This can be seen in Figures 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:RD-mh1-lds"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+a) and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:saturation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+)a) where 
+\begin_inset Formula $\lds$
+\end_inset
+
+ can reach higher values as 
+\begin_inset Formula $\Mh[1]$
+\end_inset
+
+ increases. This effect is maintained until the threshold is reached at 
+\begin_inset Formula $\Mh[1] = 2250 = \Mrhom/2$
+\end_inset
+
+ GeV, where 
+\begin_inset Formula $\Mrhom = 4500$
+\end_inset
+
+ GeV is the maximum value of 
+\begin_inset Formula $\Mrho$
+\end_inset
+
+ used in our parameter space.
+\end_layout
+
+\begin_layout Section
+Predictions for the LHC: Mono-Z production
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "MonoZ"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+At the LHC, the new vector resonance is mainly produced by quark annihilation. In consequence, the total production cross section 
+\begin_inset Formula $\sigma(pp \rightarrow \rho)$
+\end_inset
+
+ is proportional to 
+\begin_inset Formula $(g_1/g_2)^2 \approx a^2 M_W^2/M^2_{\rho} $
+\end_inset
+
+. In Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ProducionTotalRho"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ we show our predictions for 
+\begin_inset Formula $\sigma(pp \rightarrow \rho^0)$
+\end_inset
+
+ at the LHC with 
+\begin_inset Formula $\sqrt{s}=13$
+\end_inset
+
+ TeV. The tiny cross sections indicate that it is a very challenging task to discover the new heavy vector at the LHC specially when we consider only standard particles in the final states, since the interaction of the heavy vector with particles of the SM is suppressed by factors 
+\begin_inset Formula $(g_1/g_2)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float figure
+placement htb
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename  total.pdf
+	scale 50
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\begin_inset Formula $\sigma(pp \rightarrow \rho^0)$
+\end_inset
+
+ vs. 
+\begin_inset Formula $M\rho$
+\end_inset
+
+ at the LHC for 
+\begin_inset Formula $\sqrt{s}=13$
+\end_inset
+
+ TeV 
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:ProducionTotalRho"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%An interesting collider signal of our model is the production of single standard gauge boson and missing energy. In the appropriate kinematic region, 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+However, we can expect to have a better chance of getting observable signals if we consider final states containing the new scalar alongside some standard particle. A promising process is 
+\begin_inset Formula $pp\rightarrow h_1 h_1 V$
+\end_inset
+
+ (with 
+\begin_inset Formula $V=Z$
+\end_inset
+
+ or 
+\begin_inset Formula $W^{\pm}$
+\end_inset
+
+) . In this process the scalars are not detected but they produce a significant amount of missing transverse energy, as shown in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:monoz"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ (right). Hereafter, we focus on the mono-Z production. Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:monoz"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ (left) shows the predicted cross section for the process 
+\begin_inset Formula $pp\rightarrow \rho \rightarrow h_1 h_1 Z$
+\end_inset
+
+ computed for three values of the 
+\begin_inset Formula $a$
+\end_inset
+
+ parameter (
+\begin_inset Formula $a=3,4,5$
+\end_inset
+
+) while other relevant parameters were took as 
+\begin_inset Formula $M_{h1}=800$
+\end_inset
+
+ GeV, 
+\begin_inset Formula $M_{h2}=M_{h^{\pm}}=810$
+\end_inset
+
+ GeV, 
+\begin_inset Formula $\ld[345]=-0.1$
+\end_inset
+
+ and 
+\begin_inset Formula $\ld[2]=2.0$
+\end_inset
+
+. As we see, for 
+\begin_inset Formula $M_{\rho}$
+\end_inset
+
+ between 2 and 3.5 TeV, the cross section lies in the range of 
+\begin_inset Formula $(0.05-1.5)\times10^{-2}$
+\end_inset
+
+ fb.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\begin_inset Graphics 
+	filename Pictures/MonoZ.pdf
+	scale 43
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename Pictures/missingET2.pdf
+	scale 51
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\series bold
+Left
+\series default
+: 
+\begin_inset Formula $\sigma(pp\rightarrow h_1 h_1 Z)$
+\end_inset
+
+ at the LHC for 
+\begin_inset Formula $\sqrt{s}=13$
+\end_inset
+
+ TeV, 
+\begin_inset Formula $a=3$
+\end_inset
+
+ (dashed), 
+\begin_inset Formula $a=4$
+\end_inset
+
+ (continuous),
+\begin_inset Formula $a=5$
+\end_inset
+
+ (dotted). We use 
+\begin_inset Formula $M_{h1}=800$
+\end_inset
+
+ GeV, 
+\begin_inset Formula $M_{h2}=810$
+\end_inset
+
+ GeV, 
+\begin_inset Formula $\ld[345]=-0.1$
+\end_inset
+
+ and 
+\begin_inset Formula $\ld[2]=2.0$
+\end_inset
+
+. 
+\series bold
+Right
+\series default
+: Normalized missing 
+\begin_inset Formula $E_T$
+\end_inset
+
+ distribution 
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:monoz"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In order to compare the predictions of our model to the usual i2DHM ones, we compute 
+\begin_inset Formula $\sigma(pp\rightarrow h_1 h_1 Z)$
+\end_inset
+
+ for the benchmark points 1 and 6 of reference 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "Belyaev:2016lok"
+literal "true"
+
+\end_inset
+
+ defined by 
+\begin_inset Formula $M_{h1}=55$
+\end_inset
+
+ GeV, 
+\begin_inset Formula $M_{h2}=63$
+\end_inset
+
+ GeV, 
+\begin_inset Formula $M_{h^{\pm}}=150$
+\end_inset
+
+ GeV, 
+\begin_inset Formula $\ld[345]=1.0\times 10^{-4}$
+\end_inset
+
+, 
+\begin_inset Formula $\ld[2]=1.0$
+\end_inset
+
+ (BM1) and 
+\begin_inset Formula $M_{h1}=100$
+\end_inset
+
+ GeV, 
+\begin_inset Formula $M_{h2}=105$
+\end_inset
+
+ GeV, 
+\begin_inset Formula $M_{h^{\pm}}=200$
+\end_inset
+
+ GeV, 
+\begin_inset Formula $\ld[345]=2.0\times 10^{-3}$
+\end_inset
+
+, 
+\begin_inset Formula $\ld[2]=1.0$
+\end_inset
+
+ (BM6) respectively. The computed cross sections include the kinematic cut 
+\begin_inset Formula $E_T \!\!\!\!\!\!\!/  \;\;> 100$
+\end_inset
+
+ GeV for both benchmark points. In Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:BM16"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, we show our results, alongside the cross section predicted in the usual i2HDM, for BM1 (left) and BM6 (right). In both cases we can see an important enhancement in the low 
+\begin_inset Formula $\Mrho$
+\end_inset
+
+ region compared to the usual i2DHM.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\begin_inset Graphics 
+	filename Pictures/b1.pdf
+	width 45text%
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename Pictures/b6.pdf
+	width 45text%
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\series bold
+Left
+\series default
+: 
+\begin_inset Formula $\sigma(pp\rightarrow h_1 h_1 Z)$
+\end_inset
+
+ vs. 
+\begin_inset Formula $\Mrho$
+\end_inset
+
+ at the 
+\begin_inset Formula $\sqrt{s}=13$
+\end_inset
+
+ TeV LHC considering the benchmark point BM1. 
+\series bold
+Right
+\series default
+: 
+\shape italic
+Idem
+\shape default
+ but for the benchmark point BM6 
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:BM16"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Additionally, we show in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:h1h2Z"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ our prediction for 
+\begin_inset Formula $\sigma(pp\rightarrow h_1 h_2 Z)$
+\end_inset
+
+ at the 
+\begin_inset Formula $\sqrt{s}=13$
+\end_inset
+
+ TeV LHC considering the benchmark point BM6. This process also contributes to the mono-Z production provided that the mass splitting between 
+\begin_inset Formula $h_1$
+\end_inset
+
+ and 
+\begin_inset Formula $h_2$
+\end_inset
+
+ is small.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\begin_inset Graphics 
+	filename Pictures/h1h2z-b6.pdf
+	scale 50
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\begin_inset Formula $\sigma(pp\rightarrow h_1 h_2 Z)$
+\end_inset
+
+ vs. 
+\begin_inset Formula $\Mrho$
+\end_inset
+
+ at the 
+\begin_inset Formula $\sqrt{s}=13$
+\end_inset
+
+ TeV LHC considering the benchmark point BM6
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:h1h2Z"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Conclusions
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "Conclusions"
+
+\end_inset
+
+ In this work, we have extended the i2DHM by adding a new heavy vector triplet and assuming that the inert scalar doublet is strongly coupled to the new spin-1 field. The theoretical construction was based on the Hidden Local Symmetry idea and thus the new vector field was introduced by enlarging the gauge symmetry to 
+\begin_inset Formula $SU(2)_{1}\times SU(2)_{2}\times U(1)_Y$
+\end_inset
+
+. The hypothesis of a strong interaction between the heavy vector field and the inert scalar doublet was implemented making the inert scalar field to be a doublet of 
+\begin_inset Formula $SU(2)_{2}$
+\end_inset
+
+ while the standard field (including the Higgs filed) were supposed to transform non-trivialy only under 
+\begin_inset Formula $SU(2)_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+In general, the model is allowed by current data provided that 
+\begin_inset Formula $\Mrho > 2.4$
+\end_inset
+
+ TeV but lower values of 
+\begin_inset Formula $\Mrho$
+\end_inset
+
+ are possible when the decay of the new vector into non-standard scalar is open. Indeed, in this kinematic region the discovery of 
+\begin_inset Formula $\rho$
+\end_inset
+
+ seems to be rather challenging at the LHC specially when it is considered its decay only into standard particles. A more interesting possibility is the production of a 
+\begin_inset Formula $Z$
+\end_inset
+
+ boson in association with two 
+\begin_inset Formula $h_1$
+\end_inset
+
+ particles since the total process (
+\begin_inset Formula $\rho$
+\end_inset
+
+ production and decay) is less suppressed than the previous case. Naturally, the 
+\begin_inset Formula $h_1$
+\end_inset
+
+ particles would escape detection but they will produce a significant amount of missing transverse momentum. However, the predicted cross sections are quite small, although an important enhancement with respect to the usual i2DHM is observed for lower values of 
+\begin_inset Formula $\Mrho$
+\end_inset
+
+, lying in the [0.1-0.3] fb range.
+\end_layout
+
+\begin_layout Standard
+However, the presence of the new heavy vector is not innocuous for the phenomenology of the Dark Matter candidate. In fact, it introduces new annihilation channels which are important in the region of large Dark Matter mass. The most important consequence of this phenomenon is the reduction of the relic density saturation zone compared with the usual i2DHM.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%We explored the contribution of the heavy vector resonance into the parameter space of the i2HDM which is originally 5-dimensional but with the addition of this new strong sector we expanded the parameter space into a 7-dimensional one only incorporating 2 free parameters ($
+\backslash
+Mrho$ and $a$). Because the mass of the resonance is quite heavy in comparison with the mass spectrum of the SM, and the interaction the the SM fields is suppressed by a factor $g_1/g_2$, we only can see effects of this new 1-spin field in the high range mass of the of inert scalars. We found that below a threshold value given by $
+\backslash
+Mh[1]=
+\backslash
+Mrho/2$ our model predicts the same patter of $
+\backslash
+RD$ than the i2HDM. However, above that threshold the saturation region is smaller compared to i2HDM due to new annihilation channels through a $
+\backslash
+rho$ in the s-channel.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Acknowledgement
+\end_layout
+
+\begin_layout Standard
+This work was supported in part by Conicyt (Chile) grants ACT-146 and PIA/Basal FB0821, and by Fondecyt (Chile) grant 1160423.
+\end_layout
+
+\begin_layout Standard
+ 
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "bib"
+options "utphys"
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+addcontentsline{toc}{chapter}{
+\backslash
+bibname}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
