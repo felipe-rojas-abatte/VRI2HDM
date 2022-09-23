@@ -4,13 +4,12 @@ This repository holds all the information that served for the construction of th
 
 ## Paper published ##
 
-This project led to the publication of the article called "Inert two-Higgs-doublet model strongly coupled to a non-Abelian vector resonance", which was published in: Phys.Rev.D 96 (2017) 9, 095025.
-DOI: <10.1103/PhysRevD.96.095025>
+This project led to the publication of the article called "[Inert two-Higgs-doublet model strongly coupled to a non-Abelian vector resonance](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.96.095025)", which was published in: Phys.Rev.D 96 (2017) 9, 095025.
 
 ## Repository Structure ##
 
 The repository folder structure is organized in the following way:
-  * [Draft] (LaTeX code for the article)  
-  * [Model] (LanHEP/CalcHEP code for the model)
-  * [Research] (Results of the analysis)
-  * [PhysRevD.96.095025] (Article)
+  * Draft: (LaTeX code for the article)  
+  * Model: (LanHEP/CalcHEP code for the model)
+  * Research: (Results of the analysis)
+  * [PhysRevD.96.095025](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.96.095025) (Article)
